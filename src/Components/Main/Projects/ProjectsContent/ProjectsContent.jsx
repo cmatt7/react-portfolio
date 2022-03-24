@@ -25,13 +25,6 @@ const ProjectsContent = () => {
                 visit={items.netflix.visit}
                 repo={items.netflix.repo}
             />
-
-            <ProjectsCards 
-                img={items.spotify.img}
-                title={items.spotify.title}
-                visit={items.spotify.visit}
-                repo={items.spotify.repo}
-            />
         </div>
     )
 }
