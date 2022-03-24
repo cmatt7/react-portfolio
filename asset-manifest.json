@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9ffcf5aa.css",
+    "main.js": "/static/js/main.d05b5692.js",
+    "static/media/gym.jpg": "/static/media/gym.6fa37323b971aa7d8547.jpg",
+    "static/media/sql.jpg": "/static/media/sql.c7881fc2f5d0a0d31ac0.jpg",
+    "static/media/js.png": "/static/media/js.029db7d4b814c1430763.png",
+    "static/media/front-end.png": "/static/media/front-end.f959cac5459b8c0fe64f.png",
+    "static/media/git.png": "/static/media/git.6df8ee7bb8e6741f7850.png",
+    "static/media/netflix.png": "/static/media/netflix.739403404cd746fd54fd.png",
+    "static/media/rgplogo.png": "/static/media/rgplogo.01e339b809f086ca89be.png",
+    "static/media/spotify.jpg": "/static/media/spotify.40e8bea07f7fff9a2047.jpg",
+    "static/media/logo.png": "/static/media/logo.327d7cc463e53ff84a3c.png",
+    "static/media/react.png": "/static/media/react.03aa8398f15d13d83bf7.png",
+    "index.html": "/index.html",
+    "main.9ffcf5aa.css.map": "/static/css/main.9ffcf5aa.css.map",
+    "main.d05b5692.js.map": "/static/js/main.d05b5692.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ffcf5aa.css",
+    "static/js/main.d05b5692.js"
+  ]
+}
