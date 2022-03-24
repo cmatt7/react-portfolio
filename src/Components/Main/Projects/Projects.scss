@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import '../../../SCSS/mixins';
+@import '../../../SCSS/variables';
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+    
+    .project-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px auto;
+        padding: 0;
+
+        .projects-card {
+            display: flex;
+            border-radius: 10px;
+            background-color: #fff;
+        
+            margin: 10px 30px 30px 30px;
+            width: 350px;
+            height: 300px;
+        
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            transition: all 500ms ease;
+        
+            &:hover {
+                transform: translate(-5px, -5px);
+            }
+        
+            .project-card-content {
+                display: flex;
+        
+                .project-card-body {
+                    
+                    .project-card-image {
+                        border-radius: 10px;
+                        position: relative;
+                        width: 100%;
+                        height: 300px;
+                        flex: 1;
+        
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-attachment: fixed;
+                        object-fit: cover;
+                    }
+        
+                    .project-card-title-box {
+                        position: relative;
+                        margin-top: -44px;
+                        width: 350px;
+                        height: 40px;
+                        opacity: 0;
+        
+                        transition: 500ms ease;
+            
+                        .project-card-title {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            height: 100%;
+        
+                            font-family: 'Courgette', cursive;
+                            filter: drop-shadow(3px 5px 5px rgba(0,0,0,.5));
+        
+                            .project-card-button {
+                                button {
+                                    border: none;
+                                    border-radius: 8px;
+                                    margin: 15px 10px;
+                                    padding: 12px;
+                                    font-size: 0.5em;
+                                    font-weight: 600;
+        
+                                    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, 
+                                                rgba(0, 0, 0, 0.09) 0px 4px 2px, 
+                                                rgba(0, 0, 0, 0.09) 0px 8px 4px, 
+                                                rgba(0, 0, 0, 0.09) 0px 16px 8px,
+                                                rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                                    cursor: pointer;
+                                    transition: 300ms ease;
+        
+                                    i {
+                                        margin-right: 5px;
+                                    }
+        
+                                    &:hover {
+                                        -webkit-transform: translateX(-4px);
+                                        transform: translateX(-4px);
+                                    }
+                            
+                                    &:active {
+                                        box-shadow: none;
+                                        transform: translateX(4px);
+                                    }
+                                }
+        
+                                .visit-button {
+                                    text-align: center;
+                                    background: $highlight-color;
+                                    color: #fff;
+        
+                                    width: 80px;
+                                }
+        
+                                .repo-button {
+                                    color: $highlight-color;
+                                }
+                            }
+                        }
+                    }
+        
+                    &:hover > .project-card-title-box {
+                        background-color:rgba(38, 132, 145, 0.4);
+                        color: #fff;
+        
+                        margin-top: -305px;
+                        height: 301px;
+                        border-radius: 10px;
+                        opacity: 1;
+        
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .project-container {
+        margin: 30px auto;
+
+        .project-content {
+            flex-direction: column;
+            flex-basis: 80%;
+            flex-grow: 1;
+
+            .projects-card {
+                margin: 30px auto;
+            }
+        }
+    }
+}

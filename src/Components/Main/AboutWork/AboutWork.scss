@@ -1,0 +1,23 @@
+@import '../../../SCSS/mixins';
+@import '../../../SCSS/variables';
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .about-container {
+        .about-content {
+            flex-direction: column;
+            margin: 10px auto;
+        }
+    }
+}

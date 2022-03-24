@@ -1,0 +1,125 @@
+@import '../../../../SCSS/mixins';
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto;
+
+    .card-page-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        .card-layout {
+            display: flex;
+            border-radius: 12px;
+            background-color: #268491;
+        
+            margin: 20px 90px;
+            width: 310px;
+            height: 310px;
+        
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            transition: 400ms ease-in-out;
+        
+            &:hover {
+                transform: translate(0, -6px);
+            }
+        
+            .card-content {
+                display: flex;
+        
+                .card-body {
+                    
+                    .card-header {
+                        @include flex-center;
+                        background-color: #fff;
+                
+                        margin: 45px auto;
+                        border-radius: 10px;
+                        width: 100px;
+                        height: 100px;
+                        
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                        transform: rotate(45deg);
+                        transition: 800ms;
+                
+                        &:hover {
+                            transform: rotate(315deg);
+                            
+                            i {
+                                transform: rotate(45deg);
+                            }
+                
+                            .fa-shuttle-space {
+                                transform: rotate(0deg);
+                            }
+                        }
+                
+                        i {
+                            margin: 40px auto;
+                            font-size: 1.8em;
+                            color: #268491;
+                            transition: 800ms;
+                            transform: rotate(-45deg);
+                        }
+                
+                        .fa-shuttle-space {
+                            transform: rotate(-90deg);
+                        }
+                    }
+        
+                    .card-main-content {
+                        position: relative;
+                        text-align: center;
+                        margin: 0 25px;
+                        color: #fff;
+                
+                        .card-title {
+                            @include flex-center;
+                            margin: 0 0 10px 0;
+                            color: #fff;
+                
+                            &::before,
+                            &::after {
+                                content: '';
+                                border-top: 2px solid #fff;
+                                border-radius: 10px;
+                                margin: 0 8px 0 0;
+                                flex: 1 0 8px;
+                            }
+                
+                            &::after {
+                                margin: 0 0 0 8px;
+                            }
+                        }
+                
+                        .card-text {
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+        margin: 0 0 50px 0;
+
+        .card-page-content {
+            flex-direction: column;
+            flex-basis: 80%;
+            flex-grow: 2;
+
+            .card-layout {
+                margin: 30px auto;
+            }
+        }
+    }
+}

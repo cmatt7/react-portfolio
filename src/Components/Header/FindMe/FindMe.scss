@@ -1,0 +1,25 @@
+@import '../../../SCSS/mixins';
+@import '../../../SCSS/variables';
+
+.findme-container {
+    position: absolute;
+    right: 20px;
+        
+    a {
+        font-size: 1.6em;
+
+        i {
+            color: $highlight-color;
+    
+            margin: 15px 15px;
+    
+            cursor: pointer;
+            transition: all 300ms ease-in-out;
+    
+            &:hover {
+                color: #000;
+                transform: translate(-4px, 2px);
+            }
+        }
+    }
+}
