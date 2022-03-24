@@ -3,6 +3,8 @@ import Menu from './Menu/Menu';
 import AboutWork from './AboutWork/AboutWork';
 import Projects from './Projects/Projects';
 import Certificates from './Certificates/Certificates';
+import { CSSTransition } from 'react-transition-group';
+import './Main.scss';
 
 const Main = () => {
     const [page, setPage] = useState('about');
@@ -10,16 +12,38 @@ const Main = () => {
     return (
         <main id="main">
             <Menu setPage={setPage}/>
+
             {
-                page === 'about' && <AboutWork/>
+                <CSSTransition
+                    in={page === 'about'}
+                    timeout={600}
+                    classNames="fade"
+                    unmountOnExit
+                >
+                    <AboutWork/>
+                </CSSTransition>
             }
             
             {
-                page === 'projects' && <Projects/>
+                <CSSTransition
+                    in={page === 'projects'}
+                    timeout={600}
+                    classNames="fade"
+                    unmountOnExit
+                >
+                    <Projects/>
+                </CSSTransition>
             }
 
             {
-                page === 'certificates' && <Certificates/>
+                <CSSTransition
+                    in={page === 'certificates'}
+                    timeout={600}
+                    classNames="fade"
+                    unmountOnExit
+                >
+                    <Certificates/>
+                </CSSTransition>
             }
         </main>
     )

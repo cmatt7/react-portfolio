@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Menu.scss';
 
 const Menu = ({setPage}) => {
-    const [isMobile, setIsMobile] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
 
     return (
         <nav className="menu-container">

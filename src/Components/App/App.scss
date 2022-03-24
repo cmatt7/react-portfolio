@@ -16,8 +16,7 @@ body {
 
     background: $light-background-color-introduction;
     background-size: 400% 400%;
-    animation: background 5s ease-in-out infinite,
-               pageIn 1s ease;
+    animation: background 5s ease-in-out infinite;
 }
 
 h1 {
@@ -91,4 +90,24 @@ ul {
             border-bottom: 3px solid #1c1c1c;
         }
     }
+}
+
+// .fade {
+//     animation-fill-mode: both;
+//     animation-timing-function: ease-in;
+//     animation-play-state: running;
+//     animation-iteration-count: 2;
+//     animation-delay: 100ms;
+// }
+
+.fade-enter {
+    animation-name: fadeInLeft;
+    animation-duration: 600ms;
+    animation-fill-mode: both;
+}
+
+.fade-exit {
+    animation-name: fadeOutLeft;
+    animation-duration: 600ms;
+    animation-fill-mode: both;
 }
