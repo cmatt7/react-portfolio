@@ -17,14 +17,14 @@ export const items = {
         alt: 'Spotify Logo Image',
         title: 'Spotify',
         visit: '',
-        repo: `${repo_url}`
+        repo: `${repo_url}spotify-app`
     },
     netflix: {
         img: Netflix,
         alt: 'Netflix Logo Image',
         title: 'Netflix',
         visit: '',
-        repo: `${repo_url}`
+        repo: `${repo_url}netflix-app`
     },
     mentalhealth: {
         img: '',
