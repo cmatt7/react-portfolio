@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .custom-shape-divider-top-1655839977 {
     position: absolute;
     width: 100%;
