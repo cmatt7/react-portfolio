@@ -12,20 +12,67 @@ html {
     scroll-behavior: smooth;
 }
 
-.custom-shape-divider-top-1655839977 {
+body {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+/* Wave opacity at the top - About Component */
+
+.custom-shape-divider-bottom-1655917476 {
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1655917476 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1655917476 .shape-fill {
+    fill: #1976d2;
+}
+
+/* Wave below the Language and Tools Box - About Component */
+
+.custom-shape-divider-top-1656022149 {
     position: absolute;
     width: 100%;
     overflow: hidden;
     line-height: 0;
+    bottom: -70px;
 }
 
-.custom-shape-divider-top-1655839977 svg {
+.custom-shape-divider-top-1656022149 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 113px;
+    width: calc(122% + 1.3px);
+    height: 71px;
 }
 
-.custom-shape-divider-top-1655839977 .shape-fill {
-    fill: #000000;
+.custom-shape-divider-top-1656022149 .shape-fill {
+    fill: #18181B;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px white;
+    background: #1976d2;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
