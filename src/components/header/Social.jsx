@@ -1,7 +1,7 @@
 import { Instagram, GitHub, LinkedIn } from '@mui/icons-material';
 
 export default function Social() {
-    const iconStyle = 'm-2 cursor-pointer text-white';
+    const iconStyle = 'm-2 cursor-pointer text-white hover:text-sky-600';
 
     return (
         <section className="flex justify-end px-3">
