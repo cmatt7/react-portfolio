@@ -2,7 +2,7 @@ import Social from "./Social";
 import Logo from './Logo';
 
 import { Button } from '@mui/material';
-import { ExpandMoreOutlined, KeyboardDoubleArrowDownOutlined } from '@mui/icons-material';
+import { KeyboardDoubleArrowDownOutlined } from '@mui/icons-material';
 
 export default function Header() {
     return (

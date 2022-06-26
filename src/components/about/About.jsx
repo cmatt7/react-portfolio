@@ -21,7 +21,7 @@ export default function About() {
                     </p>
                     <div className="avatar justify-center" data-aos="fade-right">
                         <div className="w-40 h-40 md:w-52 md:h-full mask mask-hexagon md:ml-10 md:my-0 my-10">
-                            <img src={Matt} alt="Photo of Matheus Cruz"/>
+                            <img src={Matt} alt="Matheus Cruz"/>
                         </div>
                     </div>
                 </div>
