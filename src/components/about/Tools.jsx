@@ -18,14 +18,14 @@ import Cypress from '../../images/languages/cypress-logo.png';
 
 export default function Tools() {
     const languagesStyle = "w-16 h-16 rounded-lg m-3";
-    const languagesLayout = "flex flex-row flex-wrap mx-12 mb-6 w-72 justify-center"
+    const languagesLayout = "flex flex-row flex-wrap mx-2 md:mx-12 mb-6 w-72 justify-center"
 
     return (
-        <div className="flex flex-col justify-center items-center my-8">
+        <div className="flex flex-col justify-center items-center my-16">
 
             <h1 className="text-2xl my-2 font-semibold" data-aos="fade-right">Languages and Tools</h1>
 
-            <section className="flex flex-wrap justify-center">
+            <section className="flex flex-wrap justify-center mx-0 my-10">
                 <div className="flex flex-col items-center">
                     <h3 className="text-lg font-semibold my-4">Skills</h3>
 
@@ -64,11 +64,6 @@ export default function Tools() {
                     </figure>
                 </div>
             </section>
-
-            {/* <div className="flex text-center w-4/6 lg:w-6/12 mx-auto mb-4 font-normal text-md" data-aos="fade-up">
-                
-            </div> */}
-
         </div>
     )
 }
