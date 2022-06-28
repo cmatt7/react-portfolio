@@ -5,6 +5,9 @@ import 'aos/dist/aos.css';
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
+import Services from './components/services/Services';
+// import Projects from './components/services/Projects';
+import Footer from './components/footer/Footer';
 
 export default function App() {
     AOS.init({
@@ -16,11 +19,11 @@ export default function App() {
             <Header/>
             <About/>
             <Experience/>
+            <Services/>
+            <Footer/>
 
             {/* 
-                <Services/>
                 <Projects/>
-                <Footer/>
             */}
         </>
     )

@@ -40,7 +40,7 @@ export default function Experience() {
                 </JobInfo>
             </div>
 
-            <div className={dividerLayout} data-aos="fade-right">
+            <div className={`${dividerLayout} mb-20`} data-aos="fade-right">
                 <figure className="w-72 h-72">
                     <img
                         className={companyLogoStyle}

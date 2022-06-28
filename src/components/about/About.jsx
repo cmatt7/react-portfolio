@@ -15,9 +15,10 @@ export default function About() {
             <section className="flex flex-col items-center px-8 my-10 lg:p-8" data-aos="fade-right">
                 <h1 className="text-2xl font-bold my-2" data-aos="fade-down">About me</h1>
                 <div className="flex flex-col justify-center items-center lg:flex-row">
-                    <p className="text-lg font-normal py-4 md:w-2/6" data-aos="fade-up">
+                    <p className="text-md font-normal py-4 md:w-2/6" data-aos="fade-up">
                         Hi there, my name is Matheus Cruz but feel free to call me Matt. I'm a Full Stack Developer from Brazil, overwhelmed and obsessed by technology and everything that it provides to the world.
                         Started to see the world of programming when I was 15 years old, inspired by my father and brothers to get into this path and I've been learning ever since.<br/>
+                        My first experience was with HTML and CSS building a basic and silly page, turned out be one of the best things i've ever done it!
                     </p>
                     <div className="avatar justify-center" data-aos="fade-right">
                         <div className="w-40 h-40 md:w-52 md:h-full mask mask-hexagon md:ml-10 md:my-0 my-10">
@@ -27,7 +28,7 @@ export default function About() {
                 </div>
             </section>
 
-            <div className="flex flex-col w-full lg:h-3/6 bg-zinc-900 mx-auto lg:bottom-20 border-t-2" data-aos="fade-right">
+            <div className="flex flex-col w-full lg:h-3/6 bg-zinc-900 mx-auto lg:bottom-20" data-aos="fade-right">
                 <Tools />
 
                 <div className="custom-shape-divider-top-1656022149">
