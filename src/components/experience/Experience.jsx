@@ -1,16 +1,23 @@
 import Inovanex from '../../images/companies/inovanex.png';
 import TopNetworks from '../../images/companies/topnetworks.png';
+import TopSvg from './TopSvg';
+import BottomSvg from './BottomSvg';
 
 export default function Experience() {
-    const companyLogoStyle = "rounded-full my-10 ml-14 w-40";
-    const dividerLayout = "flex flex-col md:flex-row justify-center items-center mt-6 p-8 lg:p-10";
+    const companyLogoStyle = "rounded-full my-6 mx-auto md:ml-24 w-32";
+    const dividerLayout = "flex flex-col md:flex-row justify-center my-4 p-8 lg:p-10";
 
     return (
-        <section data-aos="fade-up">
-            <h1 className="flex justify-center text-2xl font-bold mt-20">Work Experience</h1>
+        <section className="bg-zinc-900 py-20" data-aos="fade-right">
+            <TopSvg/>
+
+            <div className="flex flex-col text-center relative">
+                <h2 className="text-lg uppercase font-semibold">Work Experience</h2>
+                <h1 className="text-2xl md:text-3xl p-4 font-bold">Let me tell you where I've worked</h1>
+            </div>
 
             <div className={dividerLayout} data-aos="fade-right">
-                <figure className="w-72 h-72">
+                <figure className="md:mr-10">
                     <img
                         className={companyLogoStyle}
                         src={Inovanex}
@@ -40,8 +47,8 @@ export default function Experience() {
                 </JobInfo>
             </div>
 
-            <div className={`${dividerLayout} mb-20`} data-aos="fade-right">
-                <figure className="w-72 h-72">
+            <div className={dividerLayout} data-aos="fade-right">
+                <figure className="md:mr-10">
                     <img
                         className={companyLogoStyle}
                         src={TopNetworks}
@@ -59,7 +66,7 @@ export default function Experience() {
 
                         <span className="font-semibold">First Experience</span>
                         <p className="mt-2 mb-6">I received this opportunity where I started to handle with clients and their requests, first time that I applied
-                        my computer skills in a professional environment.</p>
+                            my computer skills in a professional environment.</p>
 
                         <span className="font-semibold">Activities</span>
                         <p className="mt-2 mb-6">IT Consulting, technical support and computer repair for multiple companies</p>
@@ -68,27 +75,29 @@ export default function Experience() {
 
                 </JobInfo>
             </div>
+
+            <BottomSvg/>
         </section>
     )
 }
 
-function JobInfo({children}) {
+function JobInfo({ children }) {
     return (
-        <div className="text-left w-full md:w-4/6">
+        <div className="text-left w-full md:w-3/6 lg:w-5/12">
             {children}
         </div>
     )
 }
 
-function CompanyName({children}) {
+function CompanyName({ children }) {
     return (
-        <h1 className="font-bold text-2xl">
+        <h1 className="font-bold text-2xl text-blue-600">
             {children}
         </h1>
     )
 }
 
-function CompanyTitle({children}) {
+function CompanyTitle({ children }) {
     return (
         <h2 className="font-semibold text-md">{children}</h2>
     )
