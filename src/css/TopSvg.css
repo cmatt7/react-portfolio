@@ -1,0 +1,43 @@
+/* About Component */
+
+.custom-shape-divider-bottom-1655917476 {
+    position: absolute;
+    top: -135px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1655917476 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1655917476 .shape-fill {
+    fill: #1976d2;
+}
+
+/* Experience Component */
+
+.custom-shape-divider-bottom-1656512436 {
+    position: absolute;
+    width: 100%;
+    top: -58px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1656512436 svg {
+    position: relative;
+    display: block;
+    width: calc(155% + 1.3px);
+    height: 59px;
+}
+
+.custom-shape-divider-bottom-1656512436 .shape-fill {
+    fill: #18181B;
+}
