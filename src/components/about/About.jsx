@@ -14,9 +14,9 @@ export default function About() {
                     </div>
 
                     <p className="text-md py-4" data-aos="fade-down">
-                        Hi there, my name is Matheus Cruz but feel free to call me Matt. I'm a Full Stack Developer from Brazil, overwhelmed and obsessed by technology and everything that it provides to the world.
-                        Started to see the world of programming when I was 15 years old, inspired by my father and brothers to get into this path and I've been learning ever since.<br />
-                        My first experience was with HTML and CSS building a basic and silly page, turned out be one of the best things i've ever done it!
+                    Hi, my name is Matheus Cruz, but feel free to call me Matt. I'm a Full Stack Developer from Brazil, overwhelmed and obsessed with technology and all it brings to the world. 
+                    I started getting to know the programming world at 15, inspired by my father and brothers to get on this path and I've been learning ever since.
+                    My first experience was with HTML and CSS building a silly basic page, it turned out to be one of the best things I've ever done!
                     </p>
 
                     <figure className="flex justify-center my-8">
