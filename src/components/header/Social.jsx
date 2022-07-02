@@ -5,7 +5,7 @@ export default function Social() {
 
     return (
         <section className="flex justify-end px-3">
-            <a href="https://www.linkedin.com/in/matheus-cruz-561958207/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/cmatt7/" target="_blank" rel="noopener noreferrer">
                 <LinkedIn className={iconStyle} fontSize="medium" />
             </a>
 
