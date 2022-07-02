@@ -1,8 +1,6 @@
-import { Phonelink, DesktopWindows, Psychology } from '@mui/icons-material';
+import { Phonelink, DesktopWindows, Psychology, Folder, ConnectWithoutContact } from '@mui/icons-material';
 
 export default function Services() {
-    const cardStyle = "artboard phone-1 bg-black my-14 mx-auto md:mx-10 lg:mx-20 rounded-md drop-shadow-lg"
-
     return (
         <section className="py-20" data-aos="fade-down">
 
@@ -14,42 +12,51 @@ export default function Services() {
             <main className="flex flex-col lg:flex-row justify-center my-14">
                 <CardInfo
                     title="Responsive"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor molestie neque, eu cursus nisi aliquet ac. 
-                    In varius diam auctor quam lobortis euismod. Donec ut turpis sem. 
-                    Quisque accumsan augue velit, eu ultricies ipsum tristique quis. 
-                    Quisque tincidunt leo nec quam malesuada, et porttitor arcu porttitor."
+                    text="Do you need your app to be visible on any device? Great! I can do this for you. 
+                    Having responsive apps is critical for a better user experience on your system, 
+                    as most of the time people are on their phones, so whenever they need a service or 
+                    need to research something about you or your business, they can easily access it through 
+                    from their devices"
                 >
                     <Phonelink className="text-sky-600" fontSize="large" />
                 </CardInfo>
 
                 <CardInfo
                     title="Dynamic"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor molestie neque, eu cursus nisi aliquet ac. 
-                    In varius diam auctor quam lobortis euismod. Donec ut turpis sem. 
-                    Quisque accumsan augue velit, eu ultricies ipsum tristique quis. 
-                    Quisque tincidunt leo nec quam malesuada, et porttitor arcu porttitor."
+                    text="Do you need data integration from somewhere to your system or platform? Let me help you with that! 
+                    I'll make it nice and fast so everyone can use it without any problems. After all, that's the point, isn't it?"
                 >
                     <DesktopWindows className="text-sky-600" fontSize="large" />
                 </CardInfo>
 
                 <CardInfo
                     title="Mentorship"
-                    text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor molestie neque, eu cursus nisi aliquet ac. 
-                    In varius diam auctor quam lobortis euismod. Donec ut turpis sem. 
-                    Quisque accumsan augue velit, eu ultricies ipsum tristique quis. 
-                    Quisque tincidunt leo nec quam malesuada, et porttitor arcu porttitor."
+                    text="I love to contribute knowledge whenever I can, I also love to learn! 
+                    We all go through something in our lives, we all start somewhere and we all feel alone. 
+                    A little guidance can go a long way for someone and I'm more than happy to help."
                 >
                     <Psychology className="text-sky-600" fontSize="large" />
                 </CardInfo>
             </main>
 
+            <div className="flex flex-col md:flex-row justify-center items-center font-semibold uppercase">
+                <button className="flex items-center bg-zinc-900 text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-zinc-800 hover:-translate-y-2 duration-500">
+                    <Folder className="mr-3"/>
+                    Check my projects
+                </button>
+                <span>or</span>
+                <button className="flex items-center border-2 border-white text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-white hover:text-zinc-900 hover:-translate-y-2 duration-500">
+                    <ConnectWithoutContact className="mr-3"/>
+                    Contact Me
+                </button>
+            </div>
         </section>
     )
 }
 
 export function CardInfo({ children, title, text }) {
     return (
-        <div className="flex flex-col items-center my-6 px-8 md:px-24 lg:px-0 lg:mx-8 xl:mx-24" data-aos="fade-down">
+        <div className="flex flex-col items-center lg:w-4/6 my-6 px-8 md:px-24 lg:px-0 lg:mx-8 xl:mx-20" data-aos="fade-down">
             {/* Icon */}
             <span className="flex justify-center items-center w-20 h-20 bg-white rounded-full">
                 {children}
@@ -63,7 +70,7 @@ export function CardInfo({ children, title, text }) {
             {/* Title */}
 
             {/* Text */}
-            <p className="text-md text-justify">{text}</p>
+            <p className="text-md text-left">{text}</p>
             {/* Text */}
         </div>
     )
