@@ -16,10 +16,15 @@ export default function Header() {
                     <h2 className="text-4xl md:text-4xl font-normal">Hi, I'm <span className="font-bold animate-bounce">Matt</span></h2>
                     <h1 className="text-3xl md:text-5xl font-semibold mt-2.5 mb-5">Full Stack Developer</h1>
 
-                    <Button variant="contained">
-                        <a href="#about" className="font-bold relative">
-                            <KeyboardDoubleArrowDownOutlined /> Meet me
-                        </a>
+                    <Button 
+                        variant="contained"
+                        onClick={() => {
+                            const anchor = document.querySelector("#about")
+                            anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
+                        }}
+                    >
+                        <KeyboardDoubleArrowDownOutlined /> 
+                        <span className="font-bold ml-2">Meet me</span>
                     </Button>
                 </div>
             </div>
