@@ -18,49 +18,54 @@ import Cypress from '../../images/languages/cypress-logo.png';
 
 export default function Tools() {
     const languagesStyle = "w-16 h-16 rounded-lg m-3";
-    const languagesLayout = "flex flex-row flex-wrap mx-2 md:mx-12 mb-6 w-72 justify-center"
+    const languagesLayout = "flex flex-row flex-wrap mx-2 md:mx-6 lg:mx-12 mb-6 w-72 justify-center"
 
     return (
-        <div className="flex flex-col justify-center items-center my-16">
+        <div className="flex flex-col">
 
-            <h1 className="text-2xl my-2 font-semibold" data-aos="fade-right">Languages and Tools</h1>
+            <div className="text-center">
+                <h2 className="text-lg uppercase font-semibold text-slate-300" data-aos="fade-right">Programming Skills</h2>
+                <h1 className="text-2xl md:text-3xl font-bold pt-2">Languages and Tools</h1>
+            </div>
 
-            <section className="flex flex-wrap justify-center mx-0 my-10">
-                <div className="flex flex-col items-center">
-                    <h3 className="text-lg font-semibold my-4">Skills</h3>
+            <section className="flex flex-wrap justify-center mt-6">
+                <div className="flex flex-col md:flex-row items-center">
+                    <div className="flex flex-col items-center">
+                        <h3 className="text-lg font-semibold my-4">Skills</h3>
 
-                    <figure className={languagesLayout}>
-                        <img src={HTML} alt="HTML5 - Logo" className={languagesStyle} data-aos="fade-down" />
-                        <img src={CSS} alt="CSS3 - Logo" className={languagesStyle} data-aos="fade-down" />
-                        <img src={PHP} alt="PHP - Logo" className={languagesStyle} data-aos="fade-down" />
-                        <img src={JavaScript} alt="JavaScript - Logo" className={languagesStyle} data-aos="fade-down" />
-                        <img src={TypeScript} alt="TypeScript - Logo" className={languagesStyle} data-aos="fade-down" />
-                        <img src={Git} alt="Git - Logo" className={languagesStyle} data-aos="fade-down" />
-                    </figure>
-                </div>
+                        <figure className={languagesLayout}>
+                            <img src={HTML} alt="HTML5 - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={CSS} alt="CSS3 - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={PHP} alt="PHP - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={JavaScript} alt="JavaScript - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={TypeScript} alt="TypeScript - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={Git} alt="Git - Logo" className={languagesStyle} data-aos="fade-down" />
+                        </figure>
+                    </div>
 
-                <div className="flex flex-col items-center">
-                    <h3 className="text-lg font-semibold my-4">Frameworks & Libraries</h3>
+                    <div className="flex flex-col items-center">
+                        <h3 className="text-lg font-semibold my-4">Frameworks & Libraries</h3>
 
-                    <figure className={languagesLayout}>
-                        <img src={ReactJS} alt="ReactJS - Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={NextJS} alt="NextJS - Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={Firebase} alt="Firebase - Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={SCSS} alt="SCSS - Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={TailwindCSS} alt="" className={languagesStyle} data-aos="fade-down"/>
-                    </figure>
+                        <figure className={languagesLayout}>
+                            <img src={ReactJS} alt="ReactJS - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={NextJS} alt="NextJS - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={Firebase} alt="Firebase - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={SCSS} alt="SCSS - Logo" className={languagesStyle} data-aos="fade-down" />
+                            <img src={TailwindCSS} alt="" className={languagesStyle} data-aos="fade-down" />
+                        </figure>
+                    </div>
                 </div>
 
                 <div className="flex flex-col items-center">
                     <h3 className="text-lg font-semibold my-4">Studying</h3>
 
                     <figure className={languagesLayout}>
-                        <img src={NodeJS} alt="NodeJS Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={VueJS} alt="VueJS Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={Laravel} alt="Laravel Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={MySQL} alt="MySQL Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={Jest} alt="Jest - Logo" className={languagesStyle} data-aos="fade-down"/>
-                        <img src={Cypress} alt="Cypress - Logo" className={languagesStyle} data-aos="fade-down"/>
+                        <img src={NodeJS} alt="NodeJS Logo" className={languagesStyle} data-aos="fade-down" />
+                        <img src={VueJS} alt="VueJS Logo" className={languagesStyle} data-aos="fade-down" />
+                        <img src={Laravel} alt="Laravel Logo" className={languagesStyle} data-aos="fade-down" />
+                        <img src={MySQL} alt="MySQL Logo" className={languagesStyle} data-aos="fade-down" />
+                        <img src={Jest} alt="Jest - Logo" className={languagesStyle} data-aos="fade-down" />
+                        <img src={Cypress} alt="Cypress - Logo" className={languagesStyle} data-aos="fade-down" />
                     </figure>
                 </div>
             </section>

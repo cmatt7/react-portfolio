@@ -1,31 +1,77 @@
-export default function Services() {
-    const cardStyle = "artboard phone-1 bg-black my-14 mx-auto md:mx-10 lg:mx-20 rounded-md drop-shadow-lg"
+import { Phonelink, DesktopWindows, Psychology, Folder, ConnectWithoutContact } from '@mui/icons-material';
 
+export default function Services() {
     return (
-        <section className="bg-zinc-900" data-aos="fade-up">
-            <div className="custom-shape-divider-bottom-1656335499">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" className="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" className="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
-                </svg>
+        <section className="py-20" data-aos="fade-down">
+
+            <div className="text-center">
+                <h2 className="text-lg font-semibold uppercase text-slate-300">Services</h2>
+                <h1 className="text-2xl md:text-3xl font-bold pt-4">How may I help you?</h1>
             </div>
 
-            <h1 className="flex justify-center text-2xl font-bold pt-16">Services</h1>
+            <main className="flex flex-col lg:flex-row justify-center my-14">
+                <CardInfo
+                    title="Responsive"
+                    text="Do you need your app to be visible on any device? Great! I can do this for you. 
+                    Having responsive apps is critical for a better user experience on your system, 
+                    as most of the time people are on their phones, so whenever they need a service or 
+                    need to research something about you or your business, they can easily access it through 
+                    from their devices"
+                >
+                    <Phonelink className="text-sky-600" fontSize="large" />
+                </CardInfo>
 
-            <main className="flex flex-col md:flex-row flex-wrap justify-center items-center">
-                <div className={cardStyle}>
-                    320×568
-                </div>
+                <CardInfo
+                    title="Dynamic"
+                    text="Do you need data integration from somewhere to your system or platform? Let me help you with that! 
+                    I'll make it nice and fast so everyone can use it without any problems. After all, that's the point, isn't it?"
+                >
+                    <DesktopWindows className="text-sky-600" fontSize="large" />
+                </CardInfo>
 
-                <div className={cardStyle}>
-                    320×568
-                </div>
-
-                <div className={cardStyle}>
-                    320×568
-                </div>
+                <CardInfo
+                    title="Mentorship"
+                    text="I love to contribute knowledge whenever I can, I also love to learn! 
+                    We all go through something in our lives, we all start somewhere and we all feel alone. 
+                    A little guidance can go a long way for someone and I'm more than happy to help."
+                >
+                    <Psychology className="text-sky-600" fontSize="large" />
+                </CardInfo>
             </main>
+
+            <div className="flex flex-col md:flex-row justify-center items-center font-semibold uppercase">
+                <button className="flex items-center bg-zinc-900 text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-zinc-800 hover:-translate-y-2 duration-500">
+                    <Folder className="mr-3"/>
+                    Check my projects
+                </button>
+                <span>or</span>
+                <button className="flex items-center border-2 border-white text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-white hover:text-zinc-900 hover:-translate-y-2 duration-500">
+                    <ConnectWithoutContact className="mr-3"/>
+                    Contact Me
+                </button>
+            </div>
         </section>
+    )
+}
+
+export function CardInfo({ children, title, text }) {
+    return (
+        <div className="flex flex-col items-center lg:w-4/6 my-6 px-8 md:px-24 lg:px-0 lg:mx-8 xl:mx-20" data-aos="fade-down">
+            {/* Icon */}
+            <span className="flex justify-center items-center w-20 h-20 bg-white rounded-full">
+                {children}
+            </span>
+            {/* Icon */}
+
+            {/* Title */}
+            <h2 className="text-xl font-semibold my-4">
+                {title}
+            </h2>
+            {/* Title */}
+
+            {/* Text */}
+            <p className="text-md text-left">{text}</p>
+            {/* Text */}
+        </div>
     )
 }
