@@ -1,13 +1,14 @@
 import Social from "./Social";
 import Logo from './Logo';
+import NavBar from '../menu/NavBar';
 
 import { Button } from '@mui/material';
 import { KeyboardDoubleArrowDownOutlined } from '@mui/icons-material';
 
 export default function Header() {
     return (
-        <header className="w-full h-screen bg-zinc-900">
-            <Social />
+        <header className="w-full h-screen bg-zinc-900" id="home">
+            <NavBar />
 
             <div className="flex flex-col md:flex-row justify-center items-center h-5/6">
                 <Logo />
@@ -16,14 +17,14 @@ export default function Header() {
                     <h2 className="text-4xl md:text-4xl font-normal">Hi, I'm <span className="font-bold animate-bounce">Matt</span></h2>
                     <h1 className="text-3xl md:text-5xl font-semibold mt-2.5 mb-5">Full Stack Developer</h1>
 
-                    <Button 
+                    <Button
                         variant="contained"
                         onClick={() => {
                             const anchor = document.querySelector("#about")
-                            anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
+                            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
                         }}
                     >
-                        <KeyboardDoubleArrowDownOutlined /> 
+                        <KeyboardDoubleArrowDownOutlined />
                         <span className="font-bold ml-2">Meet me</span>
                     </Button>
                 </div>
