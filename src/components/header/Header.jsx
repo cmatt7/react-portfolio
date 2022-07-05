@@ -1,4 +1,3 @@
-import Social from "./Social";
 import Logo from './Logo';
 import NavBar from '../menu/NavBar';
 
