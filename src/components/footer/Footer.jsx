@@ -1,6 +1,6 @@
 import Logo from '../../images/logo.png';
 import TopSvg from './TopSvg';
-import { Chat, Download, Instagram, GitHub, LinkedIn, Mail } from '@mui/icons-material';
+import { Chat, Instagram, GitHub, LinkedIn, Mail } from '@mui/icons-material';
 
 export default function Footer() {
     const iconStyle = 'cursor-pointer text-white';
