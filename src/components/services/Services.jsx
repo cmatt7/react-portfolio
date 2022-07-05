@@ -40,12 +40,26 @@ export default function Services() {
             </main>
 
             <div className="flex flex-col md:flex-row justify-center items-center font-semibold uppercase">
-                <button className="flex items-center bg-zinc-900 text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-zinc-800 hover:-translate-y-2 duration-500">
+                <button 
+                    className="flex items-center bg-zinc-900 text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-zinc-800 hover:-translate-y-2 duration-500"
+                    onClick={() => {
+                        const anchor = document.querySelector("#projects")
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}
+                >
                     <Folder className="mr-3"/>
                     Check my projects
                 </button>
+
                 <span>or</span>
-                <button className="flex items-center border-2 border-white text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-white hover:text-zinc-900 hover:-translate-y-2 duration-500">
+
+                <button 
+                    className="flex items-center border-2 border-white text-white py-3 px-4 rounded-md shadow-xl my-3 mx-5 hover:bg-white hover:text-zinc-900 hover:-translate-y-2 duration-500"
+                    onClick={() => {
+                        const anchor = document.querySelector("#contact")
+                        anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+                    }}
+                >
                     <ConnectWithoutContact className="mr-3"/>
                     Contact Me
                 </button>
