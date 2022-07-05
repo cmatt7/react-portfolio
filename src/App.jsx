@@ -6,7 +6,7 @@ import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Services from './components/services/Services';
-// import Projects from './components/services/Projects';
+import Projects from './components/projects/Projects';
 import Footer from './components/footer/Footer';
 
 export default function App() {
@@ -20,11 +20,8 @@ export default function App() {
             <About/>
             <Experience/>
             <Services/>
+            <Projects/>
             <Footer/>
-
-            {/* 
-                <Projects/>
-            */}
         </>
     )
 }
