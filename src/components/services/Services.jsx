@@ -2,7 +2,7 @@ import { Phonelink, DesktopWindows, Psychology, Folder, ConnectWithoutContact } 
 
 export default function Services() {
     return (
-        <section className="py-20" data-aos="fade-down">
+        <section className="py-20" data-aos="fade-down" id="services">
 
             <div className="text-center">
                 <h2 className="text-lg font-semibold uppercase text-slate-300">Services</h2>

@@ -1,13 +1,14 @@
 import Social from "./Social";
 import Logo from './Logo';
+import NavBar from '../menu/NavBar';
 
 import { Button } from '@mui/material';
 import { KeyboardDoubleArrowDownOutlined } from '@mui/icons-material';
 
 export default function Header() {
     return (
-        <header className="w-full h-screen bg-zinc-900">
-            <Social />
+        <section className="w-full h-screen bg-zinc-900" id="home">
+            <NavBar />
 
             <div className="flex flex-col md:flex-row justify-center items-center h-5/6">
                 <Logo />
@@ -16,14 +17,14 @@ export default function Header() {
                     <h2 className="text-4xl md:text-4xl font-normal">Hi, I'm <span className="font-bold animate-bounce">Matt</span></h2>
                     <h1 className="text-3xl md:text-5xl font-semibold mt-2.5 mb-5">Full Stack Developer</h1>
 
-                    <Button 
+                    <Button
                         variant="contained"
                         onClick={() => {
                             const anchor = document.querySelector("#about")
-                            anchor.scrollIntoView({behavior: 'smooth', block: 'center'})
+                            anchor.scrollIntoView({ behavior: 'smooth', block: 'center' })
                         }}
                     >
-                        <KeyboardDoubleArrowDownOutlined /> 
+                        <KeyboardDoubleArrowDownOutlined />
                         <span className="font-bold ml-2">Meet me</span>
                     </Button>
                 </div>
@@ -36,6 +37,6 @@ export default function Header() {
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="shape-fill"></path>
                 </svg>
             </div>
-        </header>
+        </section>
     )
 }
