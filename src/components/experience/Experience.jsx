@@ -35,13 +35,19 @@ export default function Experience() {
                         <div className="flex flex-col p-2">
 
                             <span className="font-semibold">Front End Development - HTML5, CSS3 & JS</span>
-                            <p className="mt-2 mb-6">Designed all elements of every page within the platform in two weeks. Due to delivering ahead of schedule, I was made responsible of the backend.</p>
+                            <p className="mt-2 mb-6">
+                                Designed all elements of every page within the platform in two weeks. Due to delivering ahead of schedule, I was made responsible of the backend.
+                            </p>
 
                             <span className="font-semibold">Back End Development - PHP & MySQL</span>
-                            <p className="mt-2 mb-6">My performance was quite good for someone who never studied or coded PHP before, I was able to learn a lot, had some help and rebuilt the API working along with the engineering team</p>
+                            <p className="mt-2 mb-6">
+                            I built an API together with the engineering team to bring in data from an IoT Smart Scale that tracked how much a cat ate, when and at what time so that the owner could be aware of the cat's activities
+                            </p>
 
                             <span className="font-semibold">GitHub Manager</span>
-                            <p className="mt-2">After three weeks I was indicated to manage the Git/GitHub for the engineering team, so I structured the repositories properly and automated the deployment of any features related to projects to the server with CI/CD</p>
+                            <p className="mt-2">
+                                After three weeks I was indicated to manage the Git/GitHub for the engineering team, so I structured the repositories properly and automated the deployment of any features related to projects to the server with CI/CD
+                            </p>
 
                         </div>
 
