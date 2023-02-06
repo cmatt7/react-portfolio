@@ -7,6 +7,7 @@ import Menu from "./components/Menu.component";
 import Home from "./pages/Home.component";
 import About from "./pages/About.component";
 import Services from "./pages/Services.components";
+import Footer from "./components/Footer.component";
 
 export default function App() {
     return (
@@ -18,6 +19,8 @@ export default function App() {
                 <Route path="/about" element={<About/>}/>
                 <Route path="/services" element={<Services/>}/>
             </Routes>
+
+            <Footer/>
         </BrowserRouter>
     )
 }
