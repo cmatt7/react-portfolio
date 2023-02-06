@@ -4,12 +4,12 @@ import Languages from "../components/Languages.component";
 
 export default function About() {
     return (
-        <section className="flex flex-col h-screen px-6 lg:px-20 2xl:px-40 mt-20">
+        <section className="flex flex-col px-6 lg:px-20 2xl:px-40 mt-20">
             <ParticlesComponent />
 
             <AboutMe/>
 
-            <h1 className="text-4xl text-white text-center font-semibold mb-20">Languages & Tools</h1>
+            <h1 className="text-4xl text-blue-600 text-center font-semibold mb-20">Languages & Tools</h1>
 
             <Languages/>
         </section>
