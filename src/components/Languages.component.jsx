@@ -29,7 +29,7 @@ export default function Languages() {
         },
         {
             id: 6,
-            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg",
+            image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
             alt: "TailwindCSS - Icon"
         },
         {
@@ -94,7 +94,7 @@ export default function Languages() {
                     <figure
                         key={item.id}
                         className="flex justify-center items-center border-2 border-gray-800 rounded-md
-                        hover:bg-white hover:backdrop-blur-md text-white 
+                        hover:bg-white bg-opacity-50 text-white 
                         w-40 h-40 duration-300 ease-in-out cursor-pointer"
                     >
                         <img
