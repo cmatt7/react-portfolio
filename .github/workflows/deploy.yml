@@ -1,4 +1,4 @@
-name: Auto Deploy ⚙️
+name: Deploy Portfolio ⚙️
 
 on:
   push:
@@ -13,11 +13,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - name: Building Web App (Portfolio)
+      - name: Building Application 🚀
         run: |
-          yarn
-          vite build
-      - name: Deploy to GitHub Pages
+          yarn  
+          yarn build
+      - name: Deploying to GitHub Pages 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
