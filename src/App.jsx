@@ -6,8 +6,9 @@ import Menu from "./components/Menu.component";
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Services from "./pages/Services";
+import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 import Footer from "./components/Footer.component";
 
 export default function App() {
@@ -18,8 +19,9 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/>
-                <Route path="/services" element={<Services/>}/>
+                <Route path="/experience" element={<Experience/>}/>
                 <Route path="/projects" element={<Projects/>}/>
+                <Route path="/contact" element={<Contact/>}/>
             </Routes>
 
             <Footer/>
