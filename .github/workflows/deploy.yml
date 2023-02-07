@@ -15,8 +15,8 @@ jobs:
           node-version: '14.x'
       - name: Building Web App (Portfolio)
         run: |
-          npm ci
-          npm run build
+          yarn
+          vite build
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
