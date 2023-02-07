@@ -14,8 +14,8 @@ jobs:
 
       - name: Configure Node
           uses: actions/setup-node@v1
-        with:
-          node-version: '16.x'
+          with:
+            node-version: '16.x'
 
       - name: Building Application 🚀
         run: |
