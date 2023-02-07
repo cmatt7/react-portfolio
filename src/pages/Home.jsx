@@ -9,7 +9,7 @@ import ParticlesComponent from "../components/Particles.component";
 
 export default function Home() {
     return (
-        <section className="flex flex-col lg:flex-row lg:justify-between h-screen w-full px-6 lg:px-20 2xl:px-40 lg:-mt-20">
+        <section className="flex flex-col lg:flex-row lg:justify-between h-screen w-full px-6 lg:px-12 2xl:px-40 lg:-mt-20">
             <div className="flex flex-col justify-end lg:justify-center text-white h-full gap-y-4">
                 <span className="text-5xl text-blue-600">Hey there,</span>
                 <h1 className="text-6xl">I am <span className="font-bold">Matt.</span></h1>
