@@ -58,7 +58,7 @@ export default function Menu() {
         <nav 
             className={`
                 sticky top-0 w-full px-5 lg:px-20 2xl:px-40 py-3 flex justify-between items-center
-                ${scroll ? "bg-blue-600 backdrop-blur-md bg-opacity-20" : null}
+                ${scroll ? "bg-blue-600 backdrop-blur-md bg-opacity-20" : null} z-50
             `}>
             <figure className="hidden lg:block">
                 <Link to="/">
