@@ -4,7 +4,7 @@ import Card from "../components/Projects/Card.component";
 
 export default function Projects() {
     return (
-        <section className="flex flex-col px-6 lg:px-12 2xl:px-40 mt-20">
+        <section className="flex flex-col px-6 lg:px-12 2xl:px-40 mt-10">
             <ParticlesComponent />
 
             <div className="flex flex-col lg:flex-row justify-between md:items-center text-white gap-y-2">

@@ -4,7 +4,7 @@ import Languages from "../components/Languages.component";
 
 export default function About() {
     return (
-        <section className="flex flex-col px-6 lg:px-12 2xl:px-40 mt-20">
+        <section className="flex flex-col px-6 lg:px-12 2xl:px-40 mt-10">
             <ParticlesComponent />
 
             <AboutMe/>
