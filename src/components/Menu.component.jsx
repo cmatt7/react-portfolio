@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 // Assets
 import Logo from "../assets/logo.png";
-import { AiOutlineFolderOpen, AiOutlineHome, AiOutlineRest } from "react-icons/ai"
+import { AiOutlineFolderOpen, AiOutlineHome, AiOutlineRest, AiOutlineTeam } from "react-icons/ai"
 import { RiSuitcaseLine } from "react-icons/ri";
 
 export default function Menu() {
@@ -35,14 +35,20 @@ export default function Menu() {
         {
             id: 3,
             icon: <RiSuitcaseLine />,
-            title: "Services",
-            path: "/services"
+            title: "Experience",
+            path: "/experience"
         },
         {
             id: 4,
             icon: <AiOutlineFolderOpen />,
             title: "Projects",
             path: "/projects"
+        },
+        {
+            id: 5,
+            icon: <AiOutlineTeam />,
+            title: "Contact",
+            path: "/contact"
         }
     ]
 
