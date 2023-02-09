@@ -70,7 +70,7 @@ export default function Menu() {
                 sticky top-0 w-full px-5 lg:px-12 2xl:px-40 py-3 justify-between items-center
                 ${scroll ? "bg-blue-600 backdrop-blur-md bg-opacity-20" : null} z-50
             `}>
-                <figure className="hidden lg:block">
+                <figure className="hidden md:block">
                     <Link to="/">
                         <img src={Logo} alt="Matt - Logo" className="h-12" />
                     </Link>
